@@ -1,4 +1,5 @@
 {
     "domain": "dev-zs6a7a56tln6fw0d.us.auth0.com",
-    "clientId": "BcH7i2ORs57QxVt9opYsin1OEudD4jbi"
+    "clientId": "BcH7i2ORs57QxVt9opYsin1OEudD4jbi",
+    "redirectUri": "https://piyush-gupta-01.github.io/FindForMeApp/index.html"
 }
