@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Find For Me</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 120px; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="contact.html" class="text-white">Kanpur , Uttar Pradesh</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="contact.html" class="text-white">findforme.official@gmail.com</a></small>
+                </div>
+                <div class="top-link pe-2">
+                    <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6 ">Find For Me</h1></a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="shop.html" class="nav-item nav-link active">Service</a>
+                        <a href="shop-detail.html" class="nav-item nav-link">Brand</a>
+                        <a href="testimonial.html" class="nav-item nav-link">Team</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                        <a href="registration.html" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- User Details Section -->
+    <div class="container my-5">
+        <h1 class="mb-4">User Dashboard</h1>
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                User Information
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                        <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                        <p><strong>Age:</strong> <span id="age"></span></p>
+                        <p><strong>Address:</strong> <span id="address"></span></p>
+                        <p><strong>City:</strong> <span id="city"></span></p>
+                        <p><strong>Country:</strong> <span id="country"></span></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Postcode:</strong> <span id="postcode"></span></p>
+                        <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+                        <p><strong>Email:</strong> <span id="email"></span></p>
+                        <p><strong>Occupation:</strong> <span id="occupation"></span></p>
+                        <div>
+                            <strong>Profile Image:</strong>
+                            <br>
+                            <img id="profileImage" class="img-thumbnail" style="max-width: 150px;" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5);">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#">
+                            <h1 class="text-primary mb-0">Find For Me</h1>
+                            <p class="text-secondary mb-0">We Give What You Want</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                            <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.facebook.com/findforme.official"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href="https://www.linkedin.com/in/find-for-me-undefined-94b213338/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">A Local Search Engine</h4>
+                        <p class="mb-4">For Connects The People</p>
+                        <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Lets Go.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Fetch user details on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            const token = localStorage.getItem('token');  // Get token from localStorage
+        
+            if (!token) {
+                console.error('No token found in localStorage');
+                return;
+            }
+        
+            try {
+                const response = await fetch('https://findformeserver-production.up.railway.app/getUserDetails', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`  // Send the token in the Authorization header
+                    }
+                });
+        
+                if (response.ok) {
+                    const userDetails = await response.json();
+                    populateFields(userDetails);  // Fill the fields with user details
+                } else {
+                    const errorText = await response.text();
+                    throw new Error(errorText || 'Failed to fetch user details.');
+                }
+            } catch (error) {
+                console.error('Error fetching user details:', error);
+            }
+        });
+        
+        function populateFields(userDetails) {
+            if (!userDetails) return;
+        
+            document.getElementById('firstName').textContent = userDetails.first_name;
+            document.getElementById('lastName').textContent = userDetails.last_name;
+            document.getElementById('age').textContent = userDetails.age;
+            document.getElementById('address').textContent = userDetails.address;
+            document.getElementById('city').textContent = userDetails.city;
+            document.getElementById('country').textContent = userDetails.country;
+            document.getElementById('postcode').textContent = userDetails.postcode;
+            document.getElementById('mobile').textContent = userDetails.mobile;
+            document.getElementById('email').textContent = userDetails.email;
+            document.getElementById('occupation').textContent = userDetails.occupation;
+        
+            const profileImage = document.getElementById('profileImage');
+            profileImage.src = userDetails.profile_image || 'img/userfind.png'; // Default image if none
+        }
+        
+        
+    </script>
+</body>
+
+</html>
