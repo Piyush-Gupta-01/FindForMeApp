@@ -1,6 +1,4 @@
 function updateNavbar() {
-    // Flag to identify navbar.js script
-
     const navbar = document.querySelector('.navbar-collapse .d-flex');
     const savedUser = localStorage.getItem('loggedInUser');
 
@@ -35,7 +33,7 @@ function updateNavbar() {
                         <hr>
                         <li><a href="#" onclick="goToProfile()">Profile</a></li>
                         <li><a href="#" onclick="goToSettings()">Settings</a></li>
-                        <li><a href="#" onclick="logout()">Logout</a></li>
+                        <li><a href="#" onclick="logout()">Logout</a></li> <!-- Call logout from app.js -->
                     </ul>
                 </div>
             </div>
@@ -73,12 +71,6 @@ function updateNavbar() {
 // Redirect to Partner Dashboard
 function goToProfile() {
     window.location.href = 'partnerDashboard.html';
-}
-
-// Logout Functionality
-function logout() {
-    localStorage.removeItem('loggedInUser');
-    window.location.href = 'https://piyush-gupta-01.github.io/FindForMeApp/index.html'; // Redirect to homepage or login page
 }
 
 // Example for Settings Redirect (Optional)
