@@ -23,7 +23,7 @@ const checkAuthAndRedirect = async (occupation) => {
 
     if (isAuthenticated) {
         // If authenticated, navigate to service page with the occupation query parameter
-        window.location.href = `service.html?occupation=${occupation}`;
+        window.location.href = `https://piyush-gupta-01.github.io/FindForMeApp/service.html?occupation=${occupation}`;
     } else {
         // If not authenticated, redirect to login page
         login();
@@ -97,13 +97,13 @@ const login = async () => {
 
 const loginAsPartner = () => {
     // Redirect to registration.html
-    window.location.href = "registration.html";
+    window.location.href = "https://piyush-gupta-01.github.io/FindForMeApp/registration.html";
 };
 
-const logout = async () => {
+export const logout = async () => {
     await auth0Client.logout({
         logoutParams: {
-            returnTo: "https://piyush-gupta-01.github.io/FindForMeApp/index.html", // Use the provided redirectUri
+            returnTo: "https://piyush-gupta-01.github.io/FindForMeApp/index.html",
         },
     });
 };
@@ -152,7 +152,7 @@ const hideMiniDashboard = (event) => {
 
 // Redirect to profile page or dashboard
 const goToProfile = () => {
-    window.location.href = "/dashboard.html";
+    window.location.href = "https://piyush-gupta-01.github.io/FindForMeApp/dashboard.html";
 };
 
 // Dummy function for settings (can be customized later)

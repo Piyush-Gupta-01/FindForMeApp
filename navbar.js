@@ -1,3 +1,8 @@
+
+import { logout } from './app.js';
+
+// Use the imported logout function
+document.querySelector('#logoutButton').addEventListener('click', logout);
 function updateNavbar() {
     const navbar = document.querySelector('.navbar-collapse .d-flex');
     const savedUser = localStorage.getItem('loggedInUser');
@@ -70,7 +75,7 @@ function updateNavbar() {
 
 // Redirect to Partner Dashboard
 function goToProfile() {
-    window.location.href = 'partnerDashboard.html';
+    window.location.href = 'https://piyush-gupta-01.github.io/FindForMeApp/partnerDashboard.html';
 }
 
 // Example for Settings Redirect (Optional)
